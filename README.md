@@ -1,6 +1,6 @@
 # blink-cmp-stardict
 
-Word completion and definitions from local [StarDict](https://github.com/huzheng001/stardict-3) dictionaries, as a [blink.cmp](https://github.com/Saghen/blink.cmp) source.
+Word completion and definitions from local [StarDict](https://github.com/huzheng001/stardict-3) dictionaries.
 
 Authors: Kimi-K3🧙‍♂️, scillidan🤡
 
@@ -75,6 +75,5 @@ make test
 ## Related projects
 
 - [blink-cmp-words](https://github.com/archie-judd/blink-cmp-words) — WordNet-based dictionary & thesaurus source this project is modeled after
-- [blink-cmp-dictionary](https://github.com/Kaiser-Yang/blink-cmp-dictionary)
 - [sdcv](https://dushistov.github.io/sdcv/) — console version of StarDict
 - [sdcv-windows-build](https://github.com/scillidan/sdcv-windows-build) — Native MinGW64 build of sdcv, with runtime DLLs bundled
