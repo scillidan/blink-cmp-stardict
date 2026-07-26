@@ -38,7 +38,7 @@ function source.new(opts, config)
 	})
 	self._provider_config = config or {}
 
-	local dirs = self.opts.dict_dirs or { "~/.stardict/dic", "/usr/share/stardict/dic" }
+	local dirs = self.opts.dict_dirs or {}
 	self._dicts = dict.discover(dirs, {
 		include = self.opts.include_dictionaries or self.opts.dictionaries,
 		exclude = self.opts.exclude_dictionaries,

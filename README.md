@@ -12,7 +12,7 @@ Authors: Kimi-K3🧙‍♂️, scillidan🤡
 ## Requirements
 
 - [Neovim](https://github.com/neovim/neovim) + [blink.cmp](https://github.com/Saghen/blink.cmp)
-- StarDict dictionaries (`.ifo` + `.idx` + `.dict`), e.g. in `~/.stardict/dic`
+- StarDict dictionaries (`.ifo` + `.idx` + `.dict`)
 
 ## Installation
 
@@ -30,24 +30,17 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 					name = "stardict",
 					module = "blink-cmp-stardict",
 					opts = {
-						-- Directories scanned recursively for dictionaries (*.ifo
-						-- at any depth). Multiple dirs are merged.
-						-- "~" expands on both Windows and Linux.
-						-- Default: { "~/.stardict/dic", "/usr/share/stardict/dic" }
+						-- Required. StarDict .ifo/.idx/.dict files:
+						--   Linux: ~/.stardict/dic, /usr/share/stardict/dic
+						--   Windows: custom path with your dictionaries
 						dict_dirs = { "~/.stardict/dic" },
 
-						-- Bookname (ifo bookname= field) filters, both optional.
-						-- include: only these (default: all), exclude: drop these.
 						-- include_dictionaries = { "WordNet", "CC-CEDICT" },
 						-- exclude_dictionaries = { "GCIDE" },
 
-						max_items = 100, -- per query
-						min_chars = 3, -- counted in BYTES: 1 CJK char (3 bytes in
-						               -- UTF-8) already triggers; 3 means 3 letters
-						               -- for English. Overridden by provider
-						               -- min_keyword_length.
-						ansi_colors = true, -- render ANSI colors as highlights
-						                    -- (BlinkCmpStardictAnsi* hl groups, overridable)
+						max_items = 100,
+						min_chars = 3,
+						ansi_colors = true,
 					},
 				},
 			},
