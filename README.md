@@ -11,7 +11,8 @@ Authors: Kimi-K3🧙‍♂️, scillidan🤡
 
 ## Requirements
 
-- [Neovim](https://github.com/neovim/neovim) + [blink.cmp](https://github.com/Saghen/blink.cmp)
+- Neovim 0.10+
+- [blink.cmp](https://github.com/Saghen/blink.cmp)
 - StarDict dictionaries (`.ifo` + `.idx` + `.dict`)
 
 ## Installation
@@ -21,7 +22,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```lua
 {
 	"saghen/blink.cmp",
-	dependencies = { "your-name/blink-cmp-stardict" },
+	dependencies = { "scillidan/blink-cmp-stardict" },
 	opts = {
 		sources = {
 			default = { "lsp", "path", "stardict" },
@@ -30,17 +31,16 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 					name = "stardict",
 					module = "blink-cmp-stardict",
 					opts = {
-						-- Required. StarDict .ifo/.idx/.dict files:
+						-- Default options
+						-- Multiple paths supported. Set it for your platform/install method:
 						--   Linux: ~/.stardict/dic, /usr/share/stardict/dic
 						--   Windows: custom path with your dictionaries
-						dict_dirs = { "~/.stardict/dic" },
-
-						-- include_dictionaries = { "WordNet", "CC-CEDICT" },
-						-- exclude_dictionaries = { "GCIDE" },
-
+						dict_dirs = {}, -- Required
+						include_dictionaries = {}, -- e.g. "CC-CEDICT", "WordNet"
+						exclude_dictionaries = {}, -- e.g. "GCIDE"
+						ansi_colors = true,
 						max_items = 100,
 						min_chars = 3,
-						ansi_colors = true,
 					},
 				},
 			},
@@ -56,14 +56,6 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 ## Dictionaries
 
 Only the `.idx` index is kept in memory; definitions are read from `.dict` on demand, so large dictionaries (CC-CEDICT ≈ 500k entries) stay cheap.
-
-## Testing
-
-Requires [plenary.nvim](https://github.com/nvim-lua/plenary.nvim):
-
-```sh
-make test
-```
 
 ## Related projects
 
