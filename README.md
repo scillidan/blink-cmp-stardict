@@ -18,7 +18,9 @@ Authors: Kimi-K3🧙‍♂️, scillidan🤡
 
 - Neovim 0.10+
 - [blink.cmp](https://github.com/Saghen/blink.cmp)
-- StarDict dictionaries (`.ifo` + `.idx` + `.dict`)
+- StarDict dictionaries (`.ifo` + `.idx` + `.dict`
+
+I'm using the `sdcv` version dictionaries that renders HTML using ANSI escape sequences. Find them [here](https://github.com/scillidan?tab=repositories&q=share_).
 
 ## Installation
 
@@ -62,8 +64,6 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 Only the `.idx` index is kept in memory; definitions are read from `.dict` on demand, so large dictionaries (CC-CEDICT ≈ 500k entries) stay cheap.
 
-## Related projects
+## See also
 
-- [blink-cmp-words](https://github.com/archie-judd/blink-cmp-words) — WordNet-based dictionary & thesaurus source this project is modeled after
-- [sdcv](https://dushistov.github.io/sdcv/) — console version of StarDict
-- [sdcv-windows-build](https://github.com/scillidan/sdcv-windows-build) — Native MinGW64 build of sdcv, with runtime DLLs bundled
+- [blink-cmp-words](https://github.com/archie-judd/blink-cmp-words)
