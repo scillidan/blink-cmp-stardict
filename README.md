@@ -1,3 +1,8 @@
+<div align="center" style="display: flex; justify-content: center;">
+  <img src="blink-cmp-stardict_01.png" width="400" />
+  <img src="blink-cmp-stardict_02.png" width="400" />
+</div>
+
 # blink-cmp-stardict
 
 Word completion and definitions from local [StarDict](https://github.com/huzheng001/stardict-3) dictionaries.
