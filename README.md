@@ -1,6 +1,6 @@
 <div align="center" style="display: flex; justify-content: center;">
-  <img src="assets/blink-cmp-stardict_01.png" alt="blink-cmp-stardict" width="400" />
-  <img src="assets/blink-cmp-stardict_02.png" alt="blink-cmp-stardict" width="400" />
+  <img src="assets/blink-cmp-stardict_01.png" alt="blink-cmp-stardict" width="300" />
+  <img src="assets/blink-cmp-stardict_02.png" alt="blink-cmp-stardict" width="300" />
 </div>
 
 # blink-cmp-stardict
